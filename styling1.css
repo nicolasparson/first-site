@@ -3,5 +3,8 @@
 
 
 
-<img box-sizing="width: 1000px;>
-
+.space-picture{
+    padding: 3px solid black; 
+    float: midle;
+    width 300px;
+}
