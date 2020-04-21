@@ -1,8 +1,9 @@
 body {
+    margin: 5px solid; 
     backgound-color: #4d0099;
 }
 img {
-    padding: 3px solid black; 
-    float: midle;
-    width 130px;
+    padding: 3px solid; 
+    float: center;
+    width 75px;
 }
