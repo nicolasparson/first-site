@@ -1,154 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="mystyling1.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lesson 1 - Web Pages are Documents</title>
-    <style> 
-
-      #myBODY {
-        margin: 0;
-        border: 10px solid #000000; 
-        padding: 5px;
-        background-color: #4d0099;
-        color: #fff0b3;
-        text-align: center;
-
-      }
-      
-      #linkd {
-       padding-top: 5px;
-       padding-left: 5px;
-       padding-right: 5px;
-       padding-bottom: 80px;
-       border-bottom: 3px solid #a3a3c2;
-       background-color: #330066; 
-       margin-left: -5px;
-       margin-right: -5px;
-       margin-top: -5px;
-      }
-     
-      #firsth {
-        width: 45%;
-        float: left;
-        text-align: left;
-        font-size: 20px;
-      }
-      #paged {
-       font-variant: small-caps;
-       font-weight: bold;
-       font-size: 10px;
-       width: 40%;
-       float: right;
-       text-align: right;
-       
-      }
-      
-      #myIMG {
-        margin-left: 0px;
-        padding: 20px;
-        border: 3px solid #000000; 
-        width: 200px;
-      }
-      #myUL { 
-        text-align: left;
-      }
-      #signupd{
-        margin: 0;
-        border: 3px solid #a3a3c2;
-        border-radius: 5px;
         
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-colums: auto auto auto;
+        grid-gap: 5px;
       }
-      #ulsignup {
-        margin: 0;
-        border: 3px solid #a3a3c2;
-        padding: 5px 10px 5px 10px;
-        text-align: left;
-        font-size: 10px;
-        background-color: #330066;
+      #picture1 {
+       grid-colum-start: 1;
+       grid-colum-end: 3;
       }
-      #signuph {
-        margin: 0;
-        border: 3px solid #a3a3c2;
-        background-color: #c2c2d6;
-      }
-      #subb {
-        border: 1px solid  #000000;
-        border-radius: 5px;
-        background-color: #c2c2d6;
-        color: #fff0b3;
-      }
-        #subba {
-        text-align: center;
+      #picture2 {
+       grid-row-start: 1;
+       grid-row-end: 3;
+       grid-colum-start: 3;
+       grid-colum-end: 4;
       }
     </style>
   </head>
-  <body id="myBODY">
-    <div id="linkd">
-       
-        <h1 id="firsth"> Nicolas's Web Design </h1>
-     
-      <ul id="paged">
-        <a href="index.html" title="home">home</a>
-        <a href="my websites.html" title="my website">my websites</a>
-        <a href="additional work.html" title="additional work">additional work</a>
-      </ul>
-     </div> 
-      <br>
-      <br>
-      <br>
-    <center><h1>lasting existence</h1></center>
-    <h2>Subtitle</h2>
-    <p id="myp1">this is the start of a new journey. Written by Nicolas Parson follow at 
-        <a
-          href="https://www.instagram.com/nicolasisme/"> nicolasisme </a> on Instagram
-    </p>
-    <p id="myp2">
-      If you like random wrods and a site that literally has no specific agenda then 
-      this is the site for you.<br>
-      <br> If you don't know what existence is just visit here because you know, why not?
-      <a
-        href="https://www.merriam-webster.com/dictionary/existence"> existence.com </a>
-    </p>
-    <figure id="myfigre">
-       <img id="myIMG" src="spaceship.jpg" alt="space ship">
-    </figure>
+  <body>
     <div>
-       <h3>Understanding The Works</h3>
-       <p id="myp3">not everyone is the same, sometimes people need the special touch. Not 
-          every object is the same, sometimes characters have new or different 
-          meaning. Learn how to touch and understand the touch and how it makes 
-          things react.<br>
-           <br> If you are ready for the answer to the most wondered and asked question click the button with the question below. Thank you!  
-            <br> <button type="button" onclick="alert('joemama!')">Who's Joe?</button>
-       </p>
+     <h1>My Website Coding</h1>
     </div>
-    <p id="myp4">Here is a list of things</p>
-    <ul id="myUL">
-      <li>Thing 1</li>
-      <li>osdjhfl</li>
-      <li>'sdkjfd</li>
-      <li>who is Joe?</li>
-    </ul>
-    <p id="myp5" style="font-weight: bold;">This is bold</p>
-    <p id="myp6" style="text-decoration: underline;">This is underline</p>
-   <div id="signupd">
-   <h3 id="signuph" > Sign up for Nicks army bellow </h3>
-      <ul id="ulsignup">
-        <lable for="fname">First name:</lable>
-        <input type="text id="ifname" name"fname"><br><br>
-        <lable for="lname">Last name:</lable>
-        <input type="text id="ilname" name"lname"><br><br>
-        <lable for="email">email address:</lable>
-        <input type="text id="iemail" name"email"><br><br>                                      
-          <div id="subba">
-                       <button id="subb" type="button" onclick="alert('CONGRATULATIONS YOU HAVE JOINED THE FIGHT!!!')">Enter Submition!</botton>
-          </div>                                                                                                         
-      </ul>
-    </div>
-        
+      <div class="grid-container">
+        <a id="picture1" href="spaceship.jpg"> <h2 class="headings-in-grids"> first </h2> </a>
+        <a id="picture2" href="spaceship.jpg"> <h2 class="headings-in-grids"> second </h2> </a>
+        <a id="picture3" href="spaceship.jpg"> <h2 class="headings-in-grids"> third </h2> </a>
+        <a id="picture4" href="spaceship.jpg"> <h2 class="headings-in-grids"> fourth </h2> </a>
+        <a id="picture5" href="spaceship.jpg"> <h2 class="headings-in-grids"> fifth </h2> </a>
+        <a id="picture6" href="spaceship.jpg"> <h2 class="headings-in-grids"> sixth </h2> </a>
+        <a id="picture7" href="spaceship.jpg"> <h2 class="headings-in-grids"> seventh </h2> </a>
+        <a id="picture8" href="spaceship.jpg"> <h2 class="headings-in-grids"> eighth </h2> </a>
+      </div>
   </body>
 </html>
 
